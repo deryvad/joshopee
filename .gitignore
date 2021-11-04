@@ -1,4 +1,3 @@
-node_modules
-dist
-.serverless
-package-lock.json
+/node_modules
+/backend
+.env

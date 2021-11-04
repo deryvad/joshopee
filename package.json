@@ -1,25 +1,29 @@
 {
   "name": "joshopee",
+  "start": "node server",
   "version": "1.0.0",
-  "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node --inspect ./index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/deryvad/joshopee.git"
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/deryvad/joshopee/issues"
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:joshnuestro-zuitt-projects/b127/capstone-3/capstone-3.git"
   },
-  "homepage": "https://github.com/deryvad/joshopee#readme",
+  "description": "",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.12",
+    "react-redux": "^8.0.0-alpha.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
   }
 }
